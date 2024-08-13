@@ -66,8 +66,8 @@ def setup():
     SERVER = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     SERVER.connect((IP_ADDRESS, PORT))
 
-    # thread = Thread(target=receivedMsg)
-    # thread.start()
+    thread = Thread(target=receivedMsg)
+    thread.start()
 
     askPlayerName()
 
